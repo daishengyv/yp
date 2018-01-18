@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href = 'css/style.css' rel = 'stylesheet'>
+    </head>
+    <body>
+            <!-- onselectstart="return false;" -->
+        <header id="header">
+            <h1>
+                <i class = 'img1'></i>
+                <a href="javascript:;">百度网盘</a>
+            </h1>
+            <div class="headM floatL">
+                <a href="javascript:;" class="pan active">网盘</a>
+                <a href="javascript:;" class="share">分享</a>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class = 'headR floatR'>
+                <a href="javascript:;" class="information">
+                    <i><img src="images/tx.png" alt=""></i>
+                    <i>用户名字</i>
+                    <i class="img1"></i>
+                    <i></i>
+                    <i></i>
+                </a>
+                <a href="javascript:;" class="a">客户端下载</a>
+                <a href="javascript:;" class="a img1"></a>
+                <a href="javascript:;" class="a img1"></a>
+                <a href="javascript:;" class="img1" id="setBgImg" title="点击换肤"></a>
+                <a href="javascript:;" class="a">会员中心</a>
+            </div>
+        </header>
+        <!----------------中间区域---------------------------->
+        <div class="content">
+            <ul class="sidebar">
+                <li class="item checked">全部文件</li>
+                <li class="item">图片</li>
+                <li class="item">文档</li>
+                <li class="item">视频</li>
+                <li class="item">种子</li>
+                <li class="item">音乐</li>
+                <li class="item">其它</li>
+                <li class="item">我的分享</li>
+                <li class="item">回收站</li>
+            </ul>
+            <div class="main" id="content-main" >
+                <div class="main-head">
+                    <nav class="navbar">
+                            <ul class="navLeft floatL">
+                                <li><a href="javascript:;">上传</a></li>
+                                <li><a href="javascript:;"  class = 'img2'>分享</a></li>
+                                <li><a href="javascript:;"  class = 'img2' id="movefileBtn">移动到</a></li>
+                                <li><a href="javascript:;"  class = 'img2' id="rechristen">重命名</a></li>
+                                <li><a href="javascript:;"  class = 'img2' id="deleteBtn">删除</a></li>
+                                <li><a href="javascript:;"  class = 'img2' id="newFileBtn">新建文件夹</a></li>
+                                <li><a href="javascript:;"  class = 'img2' id="refurbishBtn" title="刷新并回到最初模式"></a></li>
+                            </ul>
+                            <ul class="navRight floatR">
+                                <li><a href="javascript:;"  class = 'img2 btn-patern'></a></li>
+                                <li class = 'img2 btn-bar'></li>
+                                <!-- <li>
+                                        <ul class="btnBar-list">
+                                            <li class="item1 img2">按时顺序</li>
+                                            <li class="item2 img2">按字母顺序</li>
+                                            <li class="item3 img2">显示缩略图</li>
+                                        </ul>
+                                </li> -->
+                            </ul>
+                    </nav>
+                    <div class="breadCrumb" id="crumbs">
+                        <a href="javascript:;" class="return">返回上一级</a>
+                        <span>
+                            <!-- <i>></i>
+                            <a href="javascript:;">全部文件</a>
+                            <i>></i>
+                            <a href="javascript:;">新建文件夹</a> -->
+                        </span>
+                    </div>
+                    <div class="checkAll" >
+                        <span id="checkAllBtn">✔</span><i>全选</i>
+                    </div>
+                </div>
+                <div class="main-container clearFix" id="fileParent">
+                    <!-- <div class="file">
+                            <div class="select">✔</div>
+                            <div class="icon"><img src="images/file.png"></div>
+                            <span class="name">照片</span>
+                            <div><input type="text"></div>    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="moveParent" id="moveParent">
+            <div class="moveHead">
+                <span>移动到</span>
+                <span class="floatR" id="move-cancel1">×</span>
+            </div>
+            <div class="moveMain" id="moveFileMain">
+                       <ul class="treeview">
+                           <li>
+                               <div><em>+</em><dfn>图</dfn><span>11111111111</span></div>
+                           </li>
+                       </ul>
+            </div>
+            <div class="moveFoot">
+                <button id="move-new">新建文件夹</button>
+                <button class="floatR" id="move-cancel">取消</button>
+                <button class="floatR" id="move-sure">确定</button>
+            </div>
+        </div>
+        <div class="bg-select" id="bgImg">
+           
+        </div>
+
+        <ul class="tooltip" id="tooltipA">
+            <li id="tooltipAmatter">确定要删除</li>
+            <li><button id="tooltipA-sure">确定</button><button id="tooltipA-cancel">取消</button></li>
+        </ul>
+        <div id="tip-shade"></div>
+        <div class="case-select" id="caseSelect"></div>
+        <!-- <div class="menuList" id="menuList">
+            <li class="menu-item">排序</li>
+            <li class="menu-item">刷新</li>
+            <li class="menu-item">新建</li>
+        </div> -->
+
+
+        <script src="js/db.js"></script>         
+        <script src="js/main.js"></script>
+        <script src="js/tools.js"></script>
+</body>
+</html>
